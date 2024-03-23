@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Taro's Cookies</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a design that I created for a cookie shop using HTML and CSS">
+  <meta name="author" content="Mary Joy Rule">
+
+  <link rel="icon" href="cookie-icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#my-cart").click(function () {
+        $("#slide-down-and-up-transition").slideToggle("slow");
+      });
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Roboto+Condensed&family=Rubik+Bubbles&family=Source+Serif+Pro&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="header">
+    <img class="cookie-icon" src="cookie-icon.png">
+    <a class="home-page" href="index.html">Home</a>
+    <a class="menu-page" href="menu.html">Menu</a>
+    <a class="contact-page" href="contact.html">Contact</a>
+
+    <div id="my-cart">
+      <i class="fa fa-shopping-cart" style="
+        color: rgb(122, 41, 41);
+        font-weight: bold;
+        font-size: 28px;
+        margin-top: 13px;
+        cursor: pointer;
+      "></i>
+    </div>
+    <div id="slide-down-and-up-transition">
+      <p class="my-cart-is-empty"> Your cart is empty</p>
+      <a href="order.html">
+        <button class="start-your-order">Start your Order</button>
+      </a>
+    </div>
+
+  </div>
+  </div>
+  <h1 class="shop-name"> Majoy joy Cookies</h1>
+  <img class="cookie-picture" src="cookie.png">
+  <p class="description">
+    Satisfy your cravings with our heavenly cookies bursting with explosive flavors and crafted from the freshest dough
+    around! Welcome to Majoy Joy Cookies, your premier online destination for homemade delights made with an extra dash
+    of love, just for you! </p>
+  <div class="order-now-position">
+    <a class="order-now" href="order.html">
+      ORDER NOW
+    </a>
+  </div>
+  <div class="my-name">
+    <button class="signature">Mary Joy Rule</button>
+  </div>
+</body>
+
+</html>

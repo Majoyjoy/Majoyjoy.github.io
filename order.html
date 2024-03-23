@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Order Form</title>
+<link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<h1>Cookie Order Form</h1>
+
+<form id="orderForm" onsubmit="return submitForm()">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+  
+  <label for="number">Number:</label><br>
+  <input type="text" id="number" name="number" required><br>
+  
+  <label for="location">Location:</label><br>
+  <input type="text" id="location" name="location" required><br>
+  
+  <label for="cookieType">Choose a Cookie:</label><br>
+  <select id="cookieType" name="cookieType">
+    <option value="Peanut Butter Cookies">Peanut Butter Cookies - ₱300</option>
+    <option value="Chocolate Chip Cookies">Chocolate Chip Cookies - ₱250</option>
+    <option value="Oatmeal Raisin Cookies">Oatmeal Raisin Cookies - ₱300</option>
+    <option value="Kiss Cookies">Kiss Cookies - ₱300</option>
+    <option value="SnowBall Cookies">SnowBall Cookies - ₱350</option>
+    <option value="Thumbprint Cookies">Thumbprint Cookies - ₱400</option>
+    <option value="Macarons">Macarons - ₱200</option>
+    <option value="White Chocolate Macademia Nut Cookies">White Chocolate Macademia Nut Cookies - ₱250</option>
+    <option value="Snicker Doodle Cookie">Snicker Doodle Cookie - ₱350</option>
+  </select><br>
+  
+  <label for="quantity">Quantity:</label><br>
+  <input type="number" id="quantity" name="quantity" min="1" required><br>
+  
+  <input type="submit" value="Place Order">
+</form>
+
+<script>
+  function submitForm() {
+    // Code to handle form submission goes here
+    // For now, let's redirect to place.html
+    window.location.href = "place.html";
+    return false; // Prevent default form submission
+  }
+</script>
+
+</body>
+</html>
